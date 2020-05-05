@@ -1,0 +1,40 @@
+﻿@using MVCDay02.Controllers
+@model User
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Form</title>
+</head>
+<body>
+    <div> 
+        <form method="post">
+            <label>Name</label>
+            <input type="text" name="name" />
+
+            <label>Email</label>
+            <input type="email" name="email" />
+         
+
+            <label>Salary</label>
+            @Html.TextBox("salary");
+            @*<input type="number" name="salary" />*@
+            
+            <label>Gender</label>
+            <select id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+                <label>Address</label>
+                <input type="text" name="address" />
+
+
+                <button type="submit">Save</button>
+
+</form>
+    </div>
+</body>
+</html>
