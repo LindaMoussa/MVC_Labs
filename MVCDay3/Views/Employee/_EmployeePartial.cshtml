@@ -1,0 +1,13 @@
+﻿@model MVCDay3.Models.Employee
+
+@*//no sections in partial views 3shan mfesh layouts*@
+<tr>
+    <td>@Model.Name</td>
+    <td>@Model.Email</td>
+    <td>@Model.Salary</td>
+    <td>@Model.Address</td>
+    <td>@Model.Gender</td>
+    <td>
+@Html.Partial("_ControlsPartial" , Model.Id)
+    </td>
+</tr>

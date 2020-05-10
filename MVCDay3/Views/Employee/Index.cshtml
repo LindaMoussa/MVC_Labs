@@ -1,0 +1,49 @@
+﻿@model List<MVCDay3.Models.Employee>
+@{
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Employee";
+}
+   
+        <h2>Employees </h2>
+        <br />
+        @Html.ActionLink("+ Add new employee","Add","Employee", null , new { @class ="btn btn-primary"})
+        <hr />
+        @if(Model !=null && Model.Count>0)
+        {
+             
+        <table class="table table-hover table-striped" >
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Salary</th>
+                    <th>Address</th>
+                    <th>Gender</th>
+                    <th></th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+               @foreach (MVCDay3.Models.Employee emp in Model)
+               {
+                   @*<tr>
+                <td>@emp.Name</td>
+                <td>@emp.Email</td>
+                <td>@emp.Salary</td>
+                <td>@emp.Address</td>
+                <td>@emp.Gender</td>
+                </tr>*@
+                  @Html.Partial("_EmployeePartial", emp);
+                   //or
+                   //Html.RenderPartial("_EmployeePartial", emp);
+                   //hy3ml render lel partial mn 3'er ma yro7 lel controller
+               }
+            </tbody>
+        </table>
+        }
+        else
+        {
+         <div class=" my-3 alert alert-warning" >No Employees Found !</div>
+        }
+
+

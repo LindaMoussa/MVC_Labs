@@ -48,3 +48,5 @@ C:\Users\LinDa\Documents\Visual Studio 2015\Projects\MVCDay1\MVCDay02\bin\System
 C:\Users\LinDa\Documents\Visual Studio 2015\Projects\MVCDay1\MVCDay02\obj\Debug\MVCDay02.dll
 C:\Users\LinDa\Documents\Visual Studio 2015\Projects\MVCDay1\MVCDay02\obj\Debug\MVCDay02.pdb
 C:\Users\LinDa\Documents\Visual Studio 2015\Projects\MVCDay1\MVCDay02\obj\Debug\MVCDay02.csprojResolveAssemblyReference.cache
+C:\Users\LinDa\Documents\Visual Studio 2015\Projects\MVCDay1\MVCDay02\obj\Debug\MVCDay02.Migrations.InitialCreate.resources
+C:\Users\LinDa\Documents\Visual Studio 2015\Projects\MVCDay1\MVCDay02\obj\Debug\MVCDay02.csproj.GenerateResource.Cache
